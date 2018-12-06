@@ -1,0 +1,17 @@
+topic: ~saySomething()
+language: jpj
+
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+
+u:(でんそうチーム　["どこ" "どちら"]) でんそうチームはひだりがわでございます。
+u:(あいしんチーム　["どこ" "どちら"]) あいしんチームはみぎがわでございます。
+u:(["シャットダウン"]) はい。これから　シャットダウンです。　$shutdown=1
+u:(["寝て" "休憩して" "寝てください"]) はい。ちょっとねますね。　$rest=1
+u:(["起きて" "起きてください"]) はい。起きます。　$wakeup=1
